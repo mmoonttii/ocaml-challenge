@@ -27,5 +27,3 @@ assert(mux4 true false false true false true = false);;
 (* - : unit = () *)
 assert(mux4 true true false true false true = true);;
 (* - : unit = () *)
-#utop_stash;;
-(* Directive utop_stash expects a string literal, got no argument. *)
