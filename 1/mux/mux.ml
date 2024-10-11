@@ -1,8 +1,8 @@
 let mux2 s0 a b = (a && not(s0)) || (b && s0)
 
-let mux22 s0 a b = if s0 then a else b
+let mux22 (s0 :bool) (a: bool) (b : bool) : bool = if s0 then a else b
 
-let mux23 s0 a b = match (s0) with
+let mux23 (s0 :bool) (a: bool) (b : bool) : bool = match (s0) with
   | true -> a
   | false -> b
 ;;
@@ -16,7 +16,8 @@ let mux4match s1 s0 a3 a2 a1 a0 =
   | false -> mux2 s1 a3 a2
 ;;
 
-  assert(mux4 false false false true false true = false);;
-  assert(mux4 false true false true false true = true);;
-  assert(mux4 true false false true false true = false);;
-  assert(mux4 true true false true false true = true);;
+(* Unit tests *)
+assert(mux4 false false false true false true = false);;
+assert(mux4 false true false true false true = true);;
+assert(mux4 true false false true false true = false);;
+assert(mux4 true true false true false true = true);;
