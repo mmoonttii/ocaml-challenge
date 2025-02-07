@@ -17,16 +17,28 @@ let f4 x =
     if x < 0 then failwith "OOR" else 0
 
 (* {x | ∀y. x + y ≥ x} *)
-    
+let f5 x = 
+    if x < 0 then failwith "OOR" else 1
+
 (* {x | ∃y. x = y + y} *)
+let f6 x =
+    if x < 0 then failwith "OOR" else
+    if x mod 2 = 0 then 1 else 0
 
 (* {x | ∃y. y = x + x} *)
+let f7 x =
+    if x < 0 then failwith "OOR" else 1
 
 (* {x | ∃y. x < y} *)
+let f8 x =
+    if x < 0 then failwith "OOR" else 1
 
 (* {x | ∃y. x * x = y} *)
+let f9 x =
+    if x < 0 then failwith "OOR" else 1
 
 (* {x | ∃y. y < 3 ∧ 7 < x y < 20 } *)
+
 
 (* {x | x < 50 ∧ ∃y. x = y + y} *)
 

@@ -1,6 +1,6 @@
 let option_map f x = 
   match x with
-  None -> None
+  | None -> None
   | Some v -> Some (f v);;
 
   let double x = x * 2;;

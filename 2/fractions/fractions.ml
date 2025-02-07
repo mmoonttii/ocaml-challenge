@@ -18,3 +18,7 @@ let compare_frac (a,b) (c,d) =
   | u, v when u > v -> 1
   | _ -> -1
 ;;
+
+assert (compare_posfrac (1,2) (2,4) == 0);;
+assert (compare_posfrac (1,2) (1,3) == 1);;
+assert (compare_posfrac (1,2) (2,3) == -1);;

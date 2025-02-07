@@ -1,4 +1,8 @@
-type vote = StrongReject | WeakReject | WeakAccept | StrongAccept
+type vote = 
+  | StrongReject 
+  | WeakReject
+  | WeakAccept
+  | StrongAccept
 
 let decide_exam a b c =
   match a, b, c with

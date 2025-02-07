@@ -1,5 +1,5 @@
-let ( <|> ) =
-  fun x y -> match x, y with
+let ( <|> ) = fun x y -> 
+  match x, y with
   | Some x, _ -> Some x
   | None, Some y -> Some y
   | None, None -> None

@@ -1,4 +1,4 @@
-let nand1 (a : bool) (b : bool) : bool = 
+wlet nand1 (a : bool) (b : bool) : bool = 
     not(a && b) ;;
 (* val nand : bool -> bool -> bool = <fun> *)
 

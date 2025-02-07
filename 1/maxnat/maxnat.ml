@@ -1,4 +1,4 @@
-let max_nat (a : int) (b :int) : int = 
+let max_nat (a : int) (b : int) : int = 
   if (a < 0) || (b < 0) then
     failwith "must use natural numbers"
   else if (a >= b) 

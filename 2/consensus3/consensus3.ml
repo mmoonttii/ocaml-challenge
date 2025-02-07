@@ -1,6 +1,6 @@
 let consensus3 (f0, f1, f2) = 
   fun n -> match (f0 n, f1 n, f2 n) with
-  | (None, _, _) | (_, None, _) | (_, _, None) -> None
+  | (None, _, _) | (_, None, _) | (_, _, None) -> failwith "Undefined"
   | (Some v0, Some v1, Some v2) -> 
     if v0 = v1 || v0 = v2 then Some v0
     else if v1 = v2 then Some v1
